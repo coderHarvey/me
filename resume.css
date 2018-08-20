@@ -1,0 +1,139 @@
+body{
+    font-family: 'Raleway', sans-serif;
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(41, 29, 48)), to(#0f0b0f)) fixed;
+}
+.container-fluid{
+    /* background-color: #3aafa9; */
+    color: #ffffff;
+    text-align: center;
+    padding: 4%;
+}
+.resume>h1{
+   
+    letter-spacing: 5px;
+    
+}
+.resume>hr{
+    width: 75%;
+    border: none;
+    height: 1px;
+    color: white;
+    background-color: #ffffff; 
+}
+
+.col-md-6>h3,.skills>h3{
+    text-align: left;
+    padding:0% 0% 3% 0%;
+    font-size: 700;
+    
+}
+.resume>.container{
+    padding: 5% 10% 0% 12%;
+
+}
+
+.skills>ul{
+    list-style-type: none ;
+    padding-left:0%; 
+    padding-top: 2%;
+}
+.skills>ul>li{
+    text-align: left;
+    margin-top: 2%;
+    font-size: 20px;
+}
+.skills>ul>li>div{
+    float:right;
+    margin: 6px 0px 0px 15px; 
+    background-color: #ffffff;
+    border-radius: 2px;
+    width: 80px;
+    height: 10px;
+    display:inline-flex;
+}
+.html>div{
+    background-color: #db297c;
+    border-radius: 2px;
+    width: 70px;
+    height: 10px;
+    animation: fill 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+.angular>div{
+    background-color: #db297c;
+    border-radius: 2px;
+    width: 65px;
+    height: 10px;
+    animation: fill 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
+}
+.mean>div{
+    background-color: #db297c;
+    border-radius: 2px;
+    width: 58px;
+    height: 10px;
+    animation: fill 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
+}
+.illustrator>div{
+    background-color: #db297c;
+    border-radius: 2px;
+    width: 75px;
+    height: 10px;
+    animation: fill 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
+}
+/* .experience{
+    overflow-y: scroll;
+    height: 400px;
+} */
+.experience>ul{
+    list-style-type: disc ;
+    padding:0% 2% 7% 2%; 
+}
+.experience>ul>li{
+    padding-left:2%;
+    text-align: left;
+    margin: 0.51%;
+    font-size: 15px;
+}
+.experience>ul>li>div{
+    padding: 5px 0px 10px 0px;
+    font-size: 22px;
+    color: #db297c;
+}
+button{
+    margin:4% 2% 1% 2%;
+    padding: 10px 30px 10px 30px;
+    background-color: #db297c;
+    color: #ffffff;
+    border-radius: 12%;
+    border: none;
+    
+}
+.back{
+    text-decoration: none;
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: #ffffff;
+    position: fixed;
+    left: 2%;
+    top: 4%;
+}
+.back:hover{
+   animation: big 1s cubic-bezier(0.075, 0.82, 0.165, 1) ;
+}
+@keyframes big{
+    0%{
+        font-size: 40px;
+    }
+}
+
+@keyframes fill {
+    0%{
+        width: 20px;
+    }
+}

@@ -1,0 +1,210 @@
+body{
+    font-family: 'Raleway', sans-serif;
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(41, 29, 48)), to(#0f0b0f)) fixed;
+    animation: appear 2s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+@keyframes appear{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.8;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.logo{
+    top: 5%;
+    left: 3%;
+    position: absolute;
+}
+.logo>img{
+    width: 30px;
+    height: auto;
+}
+#list{
+    list-style-type: none;
+    right: 3%;
+    top: 5%;
+    margin: 0%;
+    position: absolute;
+    text-align: right;
+    color: white;
+    z-index: 1;
+}
+.side-bar>ul>li{
+    margin-bottom: 5px;
+}
+
+.side-bar>ul>li>a{
+   text-align: right;
+   color: white;
+   letter-spacing: 1.5px;
+   text-decoration: none;
+}
+.side-bar>ul>li>a:hover{
+    font-size:18px;
+}
+.img-fluid{
+    max-width: 450px;
+    bottom: 0%;
+    left: 30%;
+    position: fixed;
+   
+}
+.pulkit{
+    position: absolute;
+    bottom: 5%;
+    left: 3%;
+    color: white;
+    width: 10%;
+}
+.pulkit>h1{
+    font-weight: 800;
+    margin-bottom:15px;
+    letter-spacing: 2px;
+}
+.pulkit>i{
+    font-size: 20px;
+    
+}
+.connect{
+    bottom: 5%;
+    right: 3%;
+    position: absolute;
+    float: right;
+    text-align: right;
+    color: white;
+}
+.connect>p>a{
+    background: white;
+    padding:10px;
+    border-radius: 60px;
+    border: 0px;
+}
+.connect:hover{
+    -webkit-animation: scale-up-right 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: scale-up-right 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+ @-webkit-keyframes scale-up-right {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: 100% 50%;
+              transform-origin: 100% 50%;
+    }
+    100% {
+      -webkit-transform: scale(1.2);
+              transform: scale(1.2);
+      -webkit-transform-origin: 100% 50%;
+              transform-origin: 100% 50%;
+    }
+  }
+  @keyframes scale-up-right {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: 100% 50%;
+              transform-origin: 100% 50%;
+    }
+    100% {
+      -webkit-transform: scale(1.2);
+              transform: scale(1.2);
+      -webkit-transform-origin: 100% 50%;
+              transform-origin: 100% 50%;
+    }
+  }
+  
+  
+
+.disButton{
+    display: none;
+    right:3%;
+    top:4%;
+    position: absolute;
+    font-size: 25px;
+}
+@media screen and (max-width: 425px){
+    .img-fluid{
+        width: 320px;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: fixed;
+       
+    }
+}
+@media screen and (max-width: 768px){
+    .img-fluid{
+        max-width: 420px;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: fixed;
+       
+    }
+    .pulkit{
+        z-index: 1;
+        position: fixed;
+        color: white;
+        text-align: center;
+        top: 68%;
+        left: 50%;
+        transform: translate(-50%, -20%);
+        width: 100%;
+        height: 20%;
+        padding: 25px;
+        background-color: #080608;
+    }
+    .pulkit>h1{
+        font-weight: 700;
+        margin-bottom:15px;
+        font-size: 35px;
+        text-align: center;
+    }
+    .pulkit>i{
+        font-size: 15px;
+        text-align: center;
+    }
+    .disButton{
+        display: inline;
+        margin-right: 25px;
+        font-size: 25px;
+        background-color: rgba(255, 0, 0, 0);
+        border: 0px;
+        color: white;
+    
+    }
+    #list{
+        display: none;
+        top:10%;
+        right: 8%;
+        font-size: 12px;
+
+    }
+    .logo{
+        left: 6%;
+    }
+    .connect{
+        z-index: 1;
+        position: fixed;
+        bottom: 0%;
+        text-align: center;
+        left: 50%;
+        transform: translate(-50%, -45%);
+        width: 100%;
+        height: 8%;
+    }
+    .connect>button{
+        display: inline;
+    }
+    .connect:hover{
+        animation: none;
+    }
+}
