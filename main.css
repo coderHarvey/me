@@ -132,6 +132,9 @@ body{
     font-size: 25px;
 }
 @media screen and (max-width: 425px){
+    body{
+        background: rgb(22, 13, 20);
+    }
     .img-fluid{
         width: 320px;
         top: 45%;
