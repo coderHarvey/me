@@ -1,6 +1,5 @@
 *{
     margin: 0%;
-
 }
 body{
     font-family: 'Raleway', sans-serif;
@@ -79,12 +78,14 @@ a:not([href]):not([tabindex]) {
     right: 0%;
 }
 .close{
-    font: bold;
     right: 0%;
     position: absolute;
     margin: 1%;
     color: black;
-    background: rgba(7, 7, 7, 0.849);
+    
+}
+.fa-times-circle{
+    color: black;
 }
 .portfolio{
     padding: 4% 2% 4% 2%;
@@ -174,5 +175,8 @@ hr{
   @media screen and (max-width: 425px){
       .back{
           display: none;
+      }
+      .mySlides, .mySlides>img{
+          max-width: 400px;
       }
   }
