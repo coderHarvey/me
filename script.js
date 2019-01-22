@@ -1,6 +1,12 @@
 var button= document.getElementById('disButton');
 var list=document.getElementById('list');
 
+function changeColor(color){
+    document.body.style.background="#"+color;
+    // setTimeout(()=>{
+    // document.body.style.background="-webkit-gradient(linear, left top, left bottom, from(rgb(41, 29, 48)), to(#0f0b0f)) fixed";
+    // },5000);
+}
 
 function displayList(){
     if(list.style.display=="inherit") 

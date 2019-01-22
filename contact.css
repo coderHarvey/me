@@ -3,8 +3,8 @@ body{
     height: 100%;
     margin: 0;
     background-repeat: no-repeat;
-    /* background: -webkit-gradient(linear, left top, left bottom, from(rgb(41, 29, 48)), to(#0f0b0f)) fixed; */
-    background: url(images/Asset\ 3.png)
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(41, 29, 48)), to(#0f0b0f)) fixed;
+    /* background: url(images/Asset\ 3.png) */
 }
 
 .back{
@@ -27,17 +27,17 @@ body{
     margin-top: 15px;
 }
 .head{
-    color:rgb(219, 41, 124);
+    color:rgb(255, 255, 255);
     margin-top: 60px;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Raleway', sans-serif;
     padding-bottom: 10px;
-    font-weight: 700;
-    font-size: 40px;
-    border: solid  #db297c 5px;
-    animation: blink 2.5s cubic-bezier(0.075, 0.82, 0.165, 1) 2 ;
+    font-weight: 800;
+    font-size: 50px;
+    /* border: solid  #db297c 5px; */
+    /* animation: blink 2.5s cubic-bezier(0.075, 0.82, 0.165, 1) 2 ; */
     max-width: 350px;
-    font-variant-caps: all-petite-caps;
-    letter-spacing: 2px;
+    /* font-variant-caps: all-petite-caps; */
+    /* letter-spacing: 2px; */
 }
 
 @keyframes blink {
