@@ -1,11 +1,12 @@
 body{
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Google sans';
     height: 100%;
     margin: 0;
-    background-repeat: no-repeat;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgb(41, 29, 48)), to(#0f0b0f)) fixed;
+    background-image: linear-gradient(#1F1F2B, rgb(22, 13, 20));
+    background: -webkit-gradient(linear, left top, left bottom, from(#1F1F2B), to(#0f0b0f)) fixed;
     /* background: url(images/Asset\ 3.png) */
 }
+
 
 .back{
     text-decoration: none;
@@ -29,13 +30,16 @@ body{
 .head{
     color:rgb(255, 255, 255);
     margin-top: 60px;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Google sans';
     padding-bottom: 10px;
-    font-weight: 800;
+    font-weight: 500;
     font-size: 50px;
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
     /* border: solid  #db297c 5px; */
     /* animation: blink 2.5s cubic-bezier(0.075, 0.82, 0.165, 1) 2 ; */
-    max-width: 350px;
+    /* max-width: 350px; */
     /* font-variant-caps: all-petite-caps; */
     /* letter-spacing: 2px; */
 }
@@ -66,23 +70,33 @@ div#wave {
     top: 50%;
     transform: translate(-50%,-50%);
     text-align: center;
-    width:50%;
+    width:400px;
     height:20%;
     color: white;   
     
-  }
- 
+} 
   div#wave .dot {
     display: inline-block;
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    margin-right: 5px;
+    /* margin-right: 5px; */
     animation: wave 4.3s linear infinite;
     background-color: rgba(255, 255, 255, 1);
     margin: 2%;
   }
-
+@media screen and (max-width: 425px){
+    #wave{
+        max-width: 340px;
+    }
+    .dot {
+        max-width: 65px;
+        max-height: 65px;
+    }
+    .logo{
+        max-width: 40px;
+    }
+}
   div#wave .dot:nth-child(1) {
     animation-delay: -1.5s;
   }

@@ -6,7 +6,7 @@ body{
     height: 100%;
     margin: 0;
     background-repeat: no-repeat;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgb(41, 29, 48)), to(#160f15)) fixed;
+    background: #1F1F2B;
 }
 .small{
     max-width:350px;
@@ -112,7 +112,7 @@ a:not([href]):not([tabindex]) {
     color: #ffffff;
     /* margin: 15px; */
     font-weight: 700;
-    background-color:#C41E61;
+    background-color:#6127ff;
     width:350px;
     height: 263px;
 }
@@ -123,7 +123,7 @@ a:not([href]):not([tabindex]) {
 h1{
     padding: 20px;
     max-width: 400px;
-    background: #C41E61;
+    background: #6127ff;
     font-weight: 900;
     color: #ffffff;
 }
@@ -156,7 +156,7 @@ hr{
 .dribbble{
     margin-bottom: 30px;
     padding: 20px 50px 20px 50px;
-    background: #C41E61;
+    background: #6127ff;
     
     border: none;
     word-spacing: 2px;
