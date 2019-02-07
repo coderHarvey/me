@@ -1,4 +1,4 @@
-var s = ['Designer.', 'Developer.', 'Creater.'];
+var s = ['Designer.', 'Developer.', 'Creator.'];
 function typejs(stringarr) {
     
     var ele = document.getElementById('st');
