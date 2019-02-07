@@ -1,14 +1,12 @@
 @font-face {font-family: Google sans; src: url('fonts/GoogleSans-Regular.ttf');}
 @font-face { font-family: Google sans; font-weight: bold; src: url('fonts/GoogleSans-Bold.ttf');}
-/* @font-face { font-family: Google sans; font-weight: italic; src: url('fonts/GoogleSans-Italic.ttf');} */
+
 body{
     font-family: 'Google sans';
     height: 100%;
     margin: 0;
     /* background-repeat: no-repeat; */
-    /* background-image: linear-gradient(#1F1F2B,#0f0b0f); */
-    /* background: -webkit-gradient(linear, left top, left bottom, from(#1F1F2B), to(#0f0b0f)) fixed; */
-    background-color:#0f0b0f;
+    background: #1F1F2B;
 }
 
 
@@ -41,6 +39,7 @@ body{
     position: absolute;
     left:50%;
     text-align: center;
+    
     transform: translateX(-50%);
     /* border: solid  #db297c 5px; */
     /* animation: blink 2.5s cubic-bezier(0.075, 0.82, 0.165, 1) 2 ; */
