@@ -1,3 +1,6 @@
+@font-face {font-family: Google sans; src: url('fonts/GoogleSans-Regular.ttf');}
+@font-face { font-family: Google sans; font-weight: bold; src: url('fonts/GoogleSans-Bold.ttf');}
+/* @font-face { font-family: Google sans; font-weight: italic; src: url('fonts/GoogleSans-Italic.ttf');} */
 body{
     font-family:'Google sans';
     height: 100%;
@@ -27,7 +30,9 @@ body{
     color: white;
     background-color: #ffffff; 
 }
-
+hr{
+    background-color: #ffffff;
+}
 .col-md-6>h3,.skills>h3{
     text-align: left;
     padding:0% 0% 3% 0%;

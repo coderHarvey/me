@@ -1,6 +1,6 @@
 @font-face {font-family: Google sans; src: url('fonts/GoogleSans-Regular.ttf');}
-@font-face { font-family: Google sans; font-weight: bold; src: url('GoogleSans-Bold.ttf');}
-@font-face { font-family: Google sans; font-weight: italic; src: url('GoogleSans-Italic.ttf');}
+@font-face { font-family: Google sans; font-weight: bold; src: url('fonts/GoogleSans-Bold.ttf');}
+/* @font-face { font-family: Google sans; font-weight: italic; src: url('fonts/GoogleSans-Italic.ttf');} */
 
 
 body{
