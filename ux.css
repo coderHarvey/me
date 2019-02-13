@@ -1,0 +1,45 @@
+@font-face {font-family: Google sans; src: url('fonts/GoogleSans-Regular.ttf');}
+@font-face { font-family: Google sans; font-weight: bold; src: url('fonts/GoogleSans-Bold.ttf');}
+
+body{
+    font-family: 'Google sans';
+    height: 100%;
+    margin: 0;
+    /* background-repeat: no-repeat; */
+    background: #1F1F2B;
+}
+
+h2{
+   padding-top: 50px;
+    color: white;
+}
+hr{
+    background-color: white;
+}
+.khojak{
+    background-color:rgb(27, 107, 74) ;
+    padding: 50px;
+    color: white;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.267) 5px 5px 15px;
+}
+.user-flow{
+    max-width: 100%;
+    padding: 10px;
+}
+span>img{
+    max-width: 40px;
+}
+br{
+    margin: 10px;
+}
+.khojak>button{
+    float: right;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    border: none;
+    color: rgb(27, 107, 74);
+    font-size: 20px;
+    font-weight: bold;
+}

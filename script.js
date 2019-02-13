@@ -1,6 +1,11 @@
 var button= document.getElementById('disButton');
 var list=document.getElementById('list');
 
+function hide(tagname){
+var tg=tagname;
+var el=document.getElementById(tg);
+el.style.display= el.style.display=="none" ? "inherit": "none";
+}
 function changeColor(color){
     document.body.style.background="#"+color;
     // setTimeout(()=>{
