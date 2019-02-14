@@ -1,6 +1,16 @@
 var button= document.getElementById('disButton');
 var list=document.getElementById('list');
 
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    list.style.display="inherit";
+  }
+  
+  /* Set the width of the side navigation to 0 */
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+
 function hide(tagname){
 var tg=tagname;
 var el=document.getElementById(tg);
