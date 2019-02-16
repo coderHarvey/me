@@ -27,7 +27,7 @@ function typejs(stringarr) {
             }
             ele.innerHTML=''+ x.join('');
             // ele.style.borderRight='1px';
-        }, 150
+        }, 120
     )
 }
 typejs(s);
