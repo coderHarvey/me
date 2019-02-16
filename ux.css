@@ -26,6 +26,10 @@ hr{
     border-radius: 12px;
     box-shadow: rgba(0, 0, 0, 0.267) 5px 5px 15px;
 }
+#khojak{
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+
+}
 .user-flow{
     max-width: 100%;
     padding: 10px;
