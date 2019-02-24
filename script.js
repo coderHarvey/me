@@ -12,9 +12,12 @@ function openNav() {
   }
 
 function hide(tagname){
+var btn=event.target;
+console.log(btn);
 var tg=tagname;
 var el=document.getElementById(tg);
-el.style.display= el.style.display=="none" ? "inherit": "none";
+el.style.display= (el.style.display=="" ? "block": "");
+btn.innerHTML= el.style.display==="block" ? "-": "+";
 }
 function changeColor(color){
     document.body.style.background="#"+color;
