@@ -186,8 +186,28 @@ body{
     }
 }
 @media screen and (max-width: 768px){
+    .sidenav {
+        height: 100%; /* 100% Full-height */
+        width: 0; /* 0 width - change this with JavaScript */
+        position: fixed; /* Stay in place */
+        z-index: 4; /* Stay on top */
+        top: 0; /* Stay at the top */
+        right: 0;
+        background-color: rgb(28, 28, 36); /* Black*/
+        overflow-x: hidden; /* Disable horizontal scroll */
+        padding-top: 60px; /* Place content 60px from the top */
+        transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+      }
+      .sidenav>li>a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+      }
     .img-fluid{
-        max-width: 420px;
+        max-width: 430px;
         top: 45%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -201,7 +221,7 @@ body{
         text-align: center;
         top: 70%;
         left: 50%;
-        transform: translate(-50%, -20%);
+        transform: translate(-50%, -25%);
         width: 100%;
         height: 20%;
         padding: 25px;
@@ -270,5 +290,39 @@ body{
     }
     .connect:hover{
         animation: none;
+    }
+}
+@media screen and (max-width: 320px){
+    .img-fluid{
+        max-width: 420px;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: fixed;
+       
+    }
+    .pulkit{
+        z-index: 1;
+        position: fixed;
+        color: white;
+        text-align: center;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -20%);
+        width: 100%;
+        height: 20%;
+        padding: 25px;
+        background-color: #121016;
+    }
+    .pulkit>h1{
+        font-weight: 700;
+        margin-bottom:15px;
+        font-size: 25px;
+        text-align: center;
+    }
+    .pulkit>i{
+        font-size: 18px;
+        text-align: center;
+        position: relative;
     }
 }
