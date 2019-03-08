@@ -84,14 +84,7 @@ function showSlides(n) {
  
   }
 
-  enterView({
-    selector:'.skills',
-    enter: function(el){
-        el.classList.add('entered');
-    },
-    offset: 0.5, // enter at middle of viewport
-	once: true, // trigger just once
-})
+
 
 var ele=this.document.getElementsByClassName("skills");
 function enter(){

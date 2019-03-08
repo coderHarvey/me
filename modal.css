@@ -164,6 +164,9 @@ hr{
     /* transform: translate(-50%,-80%); */
 
 }
+.mySlides>img{
+    max-width:60vw;
+}
 .bounce-top {
     -webkit-animation: bounce-top 1.3s infinite both;
 	        animation: bounce-top 1.3s infinite both;
