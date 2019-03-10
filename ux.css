@@ -27,7 +27,7 @@ hr{
     border-radius: 12px;
     box-shadow: rgba(0, 0, 0, 0.267) 5px 5px 15px;
 }
-#khojak,#kalam, #intern{
+#khojak,#kalam, #intern, #AAC{
     transition: 0.5s;
     display: none;
 }
