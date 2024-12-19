@@ -1,54 +1,267 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="theme-color" content="#140b12" />
-    <title> Pulkit Ahuja</title>
+    <meta name="theme-color" content="#18181b" />
+    <title>Pulkit Ahuja</title>
     <link rel="shortcut icon" href="images/logo.png" type="image/png">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
-    
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="main.css">
-    
+
 </head>
-<body>
-    <div class="header">
-    <div class="logo">
-        <img src="images/logo.png" alt="PulkitAhuja">
+
+<body class="bg-gradient-to-r from-zinc-900 to-zinc-900 text-white">
+    <!-- Container -->
+    <div class="flex flex-col px-4 sm:px-6 lg:px-8">
+        <!-- Navigation -->
+        <header class="flex items-center justify-between p-4">
+            <!-- Logo or Title -->
+            <h1 class="text-2xl font-bold max-md:text-xl font-bold flex-grow">Pulkit Ahuja <span
+                    class="inline text-orange-500 text-5xl">.</span></h1>
+
+            <!-- Full Nav for Larger Screens -->
+            <nav class="hidden lg:flex justify-end">
+                <a href="#about-me" class="px-4 hover:text-gray-300">About</a>
+                <a href="#experience" class="px-4 hover:text-gray-300">Experience</a>
+                <a id="contactCaller" href="#contact" class="px-4 hover:text-gray-300">Contact</a>
+            </nav>
+
+            <!-- Hamburger Menu Button (Visible only on small screens) -->
+            <button id="openNav" class="block lg:hidden text-gray-300 hover:text-white focus:outline-none">
+                <!-- Hamburger Icon -->
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                    </path>
+                </svg>
+            </button>
+
+            <!-- Sliding Navigation (Hidden by Default) -->
+            <nav id="sideNav"
+                class="fixed top-0 right-0 h-full w-64 bg-gray-800 text-white transform translate-x-full transition-transform duration-300 ease-in-out lg:hidden z-50">
+                <!-- Close Button -->
+                <div class="flex justify-end p-4">
+                    <button id="closeNav" class="text-gray-400 hover:text-white focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Navigation Links -->
+                <ul class="space-y-4 px-8">
+                    <li><a href="#about-me" id="aboutMeCaller" class="block hover:text-gray-300">About</a></li>
+                    <li><a href="#experience" id="experienceCaller" class="block hover:text-gray-300">Experience</a></li>
+                    <li><a href="#contact" id="contactCaller" class="block hover:text-gray-300">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Hero Section -->
+        <section id="about-me" class="mt-16 text-center">
+            <!-- Profile Image -->
+            <div class="flex justify-center mb-6">
+                <img src="images/main.png" alt="Profile" class="w-48 h-48 rounded-full object-cover" />
+            </div>
+
+            <!-- Main Headline -->
+            <h1 class="text-4xl font-bold tracking-tight sm:text-5xl">
+                Software engineer, designer, and <br />
+                an amateur artist.
+            </h1>
+
+            <!-- Description -->
+            <p class="mt-4 text-gray-400 leading-relaxed text-lg max-w-2xl mx-auto">
+                I’m Pulkit Ahuja, a software engineer based in Gurugram, India, with 5+ years of experience in
+                full-stack development using React, TypeScript, Java, and AWS.
+                I’m passionate about crafting modern UI solutions and innovative applications, earning recognition
+                through hackathon wins and performance awards.
+                Outside of work, I enjoy swimming, yoga, and art.
+            </p>
+
+            <!-- Social Icons -->
+            <div id="contact" class="mt-12 pt-8 flex justify-center space-x-6">
+                <a href="mailto:pulkit3023@gmail.com" target="_blank" class="text-gray-400 hover:text-white">
+                    <img src="https://cdn.simpleicons.org/gmail/f97316" alt="Instagram" class="w-6 h-6" />
+                </a>
+                <a href="https://www.linkedin.com/in/pulkit3023" target="_blank" class="text-gray-400 hover:text-white">
+                    <img src="https://cdn.simpleicons.org/linkedin/f97316" alt="LinkedIn" class="w-6 h-6" />
+                </a>
+                <a href="https://github.com/pulkitAhuja" target="_blank" class="text-gray-400 hover:text-white">
+                    <img src="https://cdn.simpleicons.org/github/f97316" target="_blank" alt="GitHub" class="w-6 h-6" />
+                </a>
+                <a href="https://dribbble.com/pulkit3023" target="_blank" class="text-gray-400 hover:text-white">
+                    <img src="https://cdn.simpleicons.org/dribbble/f97316" alt="Dribble" class="w-6 h-6" />
+                </a>
+                <a href="https://www.instagram.com/pulkit__ahuja" target="_blank" class="text-gray-400 hover:text-white">
+                    <img src="https://cdn.simpleicons.org/instagram/f97316" alt="Instagram" class="w-6 h-6" />
+                </a>
+
+            </div>
+        </section>
     </div>
-    <div><button class="disButton" id="disButton" onclick="openNav()"><i class="fas fa-bars"></i></button></div>
-    <div class="side-bar sidenav" id="mySidenav">
-            <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
-            <ul id="list"> 
-                <li><a href="uxprojects.html">UX PROJECTS</a></li>
-                <li><a href="portfolio.html">PORTFOLIO</a></li>
-                <li><a href="resume.html">RESUME</a></li>
-                <li><a href="https://github.com/pulkitAhuja/">GITHUB</a></li>
-            </ul>
-    
-    </div>
-    </div>
-    <div class="main-img">
-        <img class="img-fluid" src="images/main.png" alt="me">
-    </div>
-    <div class="pulkit">
-        <h1>
-            PULKIT AHUJA
-        </h1>
-        <i id="st"></i>
-    </div>
-    <div class="connect">
-        <p>Contact me! <a href="contact.html"><img src="images/send.png"></a></p>
-        <button><a href="contact.html">Contact Me</a></button>
-        <!-- <button><img src="images/send.png"> </button> -->
+    <hr class="bg-white mt-24 mx-24" />
+    <div class="mt-24 px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col lg:flex-row gap-6 max-w-7xl mx-auto">
+            <!-- Left Column: Articles -->
+            <div class="lg:w-2/3">
+                <div class="px-6 text-2xl font-bold mb-4">Highlights</div>
+                <article class="hover:bg-zinc-700 px-6 py-4 rounded-xl">
+                    <p class="text-sm text-gray-500">| Cvent Inc.</p>
+                    <h2 class="mt-2 text-lg font-semibold text-white hover:text-gray-300">
+                        Revamping monolithic application to Next.JS - GQL - Dropwizard Based Framework
+                    </h2>
+                    <p class="mt-2 text-gray-400 text-justify">
+                        Worked on the redesign of the Cvent Supplier Network, transitioning from legacy systems to a
+                        modern tech stack using React, TypeScript, Next.js, and GraphQL for the frontend, alongside
+                        Java-based REST microservices for the backend, ensuring improved performance, accessibility, and
+                        user experience.
+                    </p>
+                </article>
+                <article class="hover:bg-zinc-700 px-6 py-4 rounded-xl">
+                    <p class="text-sm text-gray-500">| Cvent Inc.</p>
+                    <h2 class="mt-2 text-lg font-semibold text-white hover:text-gray-300">
+                        Generative AI Intergrated Solutions
+                    </h2>
+                    <p class="mt-2 text-gray-400 text-justify">
+                        Innovated features leveraging Generative AI and NLP to parse data files
+                        and extract personalized user data for automatically generating helpful insights and
+                        streamlining their
+                        workflows and improving efficiency.
+                    </p>
+                </article>
+                <article class="hover:bg-zinc-700 px-6 py-4 rounded-xl">
+                    <p class="text-sm text-gray-500">| Cvent Inc.</p>
+                    <h2 class="mt-2 text-lg font-semibold text-white hover:text-gray-300">
+                        Automation for the win!
+                    </h2>
+                    <p class="mt-2 text-gray-400 text-justify">
+                        Designed and optimized comprehensive UI and load automation suites using WebdriverIO, Karate,
+                        and Gatling frameworks, ensuring seamless releases with enhanced quality and performance
+                        monitoring.
+                    </p>
+                </article>
+                <article class="hover:bg-zinc-700 px-6 py-4 rounded-xl">
+                    <p class="text-sm text-gray-500">| Volted PC</p>
+                    <h2 class="mt-2 text-lg font-semibold text-white hover:text-gray-300">
+                        Branding, Themeing & Building Store Website
+                    </h2>
+                    <p class="mt-2 text-gray-400 text-justify">
+                        Developed branding, theming, and a fully functional store website for Volted PC, a custom
+                        PC-building company, enhancing their online presence and customer experience.
+                    </p>
+                </article>
+
+            </div>
+
+            <!-- Right Sidebar -->
+            <aside class="space-y-8 lg:w-1/3 ">
+
+                <!-- Work Section -->
+                <div id="experience" class="p-6 bg-zinc-800 drop-shadow-lg rounded-lg mb-24">
+                    <h3 class="text-lg font-semibold mb-4">Work</h3>
+
+                    <!-- Work Entry 1 -->
+                    <div class="flex items-center space-x-4">
+                        <img src="images/cvent-icon.png" alt="Cvent" class="w-8 h-8 rounded-full" />
+                        <div class="flex-1">
+                            <h4 class="text-sm font-medium text-white">Cvent Inc.</h4>
+                            <p class="text-gray-400 text-sm">Senior Software Engineer</p>
+                        </div>
+                        <p class="text-gray-500 text-xs">2023 — Present</p>
+                    </div>
+
+                    <!-- Work Entry 2 -->
+                    <div class="flex items-center space-x-4 mt-4">
+                        <img src="images/cvent-icon.png" alt="Cvent" class="w-8 h-8 rounded-full" />
+                        <div class="flex-1">
+                            <h4 class="text-sm font-medium text-white">Cvent Inc.</h4>
+                            <p class="text-gray-400 text-sm">Software Engineer - II</p>
+                        </div>
+                        <p class="text-gray-500 text-xs">2021 — 2023</p>
+                    </div>
+
+                    <!-- Work Entry 3 -->
+                    <div class="flex items-center space-x-4 mt-4">
+                        <img src="images/cvent-icon.png" alt="Cvent" class="w-8 h-8 rounded-full" />
+                        <div class="flex-1">
+                            <h4 class="text-sm font-medium text-white">Cvent Inc.</h4>
+                            <p class="text-gray-400 text-sm">Software Engineer - I</p>
+                        </div>
+                        <p class="text-gray-500 text-xs">2019 — 2021</p>
+                    </div>
+
+                    <!-- Work Entry 4 -->
+                    <div class="flex items-center space-x-4 mt-4">
+                        <img src="images/volted-icon.png" alt="Volted PC" class="w-8 h-8 rounded-full" />
+                        <div class="flex-1">
+                            <h4 class="text-sm font-medium text-white">Volted PC</h4>
+                            <p class="text-gray-400 text-sm">UI Engineer</p>
+                        </div>
+                        <p class="text-gray-500 text-xs">2018 — 2019</p>
+                    </div>
+
+                    <!-- Work Entry 5 -->
+                    <div class="flex items-center space-x-4 mt-4">
+                        <img src="images/kalamcentre-icon.png" alt="Kalam Centre" class="w-8 h-8 rounded-full" />
+                        <div class="flex-1">
+                            <h4 class="text-sm font-medium text-white">Kalam Centre</h4>
+                            <p class="text-gray-400 text-sm">Graphic Design Intern</p>
+                        </div>
+                        <p class="text-gray-500 text-xs">2017 — 2018</p>
+                    </div>
+
+                    <hr class="bg-zinc-600 my-4" />
+                    <h3 class="text-lg font-semibold mt-8 mb-6">Tech Stack</h3>
+                    <div class="flex flex-wrap gap-1 pb-3">
+                        <span class="px-3 py-1 rounded-full bg-zinc-700 text-white text-xs font-medium">React</span>
+                        <span
+                            class="px-3 py-1 rounded-full bg-zinc-700 text-white text-xs font-medium">TypeScript</span>
+                        <span
+                            class="px-3 py-1 rounded-full bg-zinc-700 text-white text-xs font-medium">JavaScript</span>
+                        <span class="px-3 py-1 rounded-full bg-zinc-700 text-white text-xs font-medium">CSS/SCSS</span>
+                        <span class="px-3 py-1 rounded-full bg-zinc-700 text-white text-xs font-medium">GraphQL</span>
+                    </div>
+                    <div class="flex flex-wrap gap-1 pb-3">
+                        <span class="px-3 py-1 rounded-full bg-zinc-700 text-white text-xs font-medium">Java</span>
+                        <span
+                            class="px-3 py-1 rounded-full bg-zinc-700 text-white text-xs font-medium">Dropwizard</span>
+                        <span class="px-3 py-1 rounded-full bg-zinc-700 text-white text-xs font-medium">SQL/PGSQL</span>
+                        <span class="px-3 py-1 rounded-full bg-zinc-700 text-white text-xs font-medium">Couchbase</span>
+                        <span class="px-3 py-1 rounded-full bg-zinc-700 text-white text-xs font-medium">AWS &
+                            Jenkins</span>
+                    </div>
+                    <div class="flex flex-wrap gap-1">
+                        <span class="px-3 py-1 rounded-full bg-zinc-700 text-white text-xs font-medium">Figma</span>
+                        <span class="px-3 py-1 rounded-full bg-zinc-700 text-white text-xs font-medium">Photoshop</span>
+                        <span
+                            class="px-3 py-1 rounded-full bg-zinc-700 text-white text-xs font-medium">Illustrator</span>
+                    </div>
+
+
+                    <!-- Download CV Button -->
+                    <button onclick="window.open('public/PULKIT_AHUJA.pdf', '_blank').focus()"
+                        class="w-full mt-8 py-2 text-sm font-medium bg-zinc-900 hover:bg-zinc-600 text-white rounded-md focus:outline-none">
+                        Download CV
+                        <svg class="inline h-5 px-1 pb-1" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                        </svg>
+
+                    </button>
+                </div>
+            </aside>
+        </div>
     </div>
 </body>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+
 <script src="script.js"></script>
-<script src="typ.js"></script>
 
 </html>
